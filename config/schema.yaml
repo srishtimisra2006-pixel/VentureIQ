@@ -1,0 +1,552 @@
+# VentureIQ Master Schema
+# Defines the standardized fields understood by the analytics engine.
+
+schema_version: "1.0"
+
+fields:
+
+  # -------------------------
+  # IDENTITY
+  # -------------------------
+  Startup_ID:
+    category: Identity
+    type: text
+    required: false
+    synonyms:
+      - startup id
+      - startup_id
+      - company id
+      - company_id
+      - id
+
+  Startup_Name:
+    category: Identity
+    type: text
+    required: true
+    synonyms:
+      - startup name
+      - startup_name
+      - company name
+      - company_name
+      - business name
+      - brand name
+      - name
+
+  Industry:
+    category: Identity
+    type: text
+    required: false
+    synonyms:
+      - industry
+      - sector
+      - business sector
+      - industry vertical
+      - vertical
+
+  Business_Model:
+    category: Identity
+    type: text
+    required: false
+    synonyms:
+      - business model
+      - business_model
+      - revenue model
+      - revenue_model
+
+  Founded_Year:
+    category: Identity
+    type: numeric
+    required: false
+    synonyms:
+      - founded year
+      - founded_year
+      - year founded
+      - founding year
+
+  Location:
+    category: Identity
+    type: text
+    required: false
+    synonyms:
+      - location
+      - city
+      - headquarters
+      - headquarters location
+      - startup location
+      - geography
+
+  Funding_Stage:
+    category: Identity
+    type: text
+    required: false
+    synonyms:
+      - funding stage
+      - funding_stage
+      - startup stage
+      - stage
+      - investment stage
+
+  # -------------------------
+  # FINANCIAL
+  # -------------------------
+  Revenue:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - revenue
+      - annual revenue
+      - yearly revenue
+      - sales revenue
+      - total revenue
+      - turnover
+      - annual sales
+
+  Revenue_Growth:
+    category: Financial
+    type: percentage
+    required: false
+    synonyms:
+      - revenue growth
+      - revenue_growth
+      - sales growth
+      - annual growth
+      - growth rate
+      - revenue growth rate
+
+  Gross_Margin:
+    category: Financial
+    type: percentage
+    required: false
+    synonyms:
+      - gross margin
+      - gross_margin
+      - gross profit margin
+      - gross margin percentage
+
+  Net_Margin:
+    category: Financial
+    type: percentage
+    required: false
+    synonyms:
+      - net margin
+      - net_margin
+      - net profit margin
+      - net margin percentage
+
+  EBITDA:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - ebitda
+      - ebitda profit
+      - operating ebitda
+
+  Burn_Rate:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - burn rate
+      - burn_rate
+      - monthly burn
+      - cash burn
+      - monthly cash burn
+
+  Cash_Balance:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - cash balance
+      - cash_balance
+      - cash available
+      - cash reserves
+
+  Cash_Runway:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - cash runway
+      - cash_runway
+      - runway
+      - runway months
+      - months of runway
+
+  Funding_Raised:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - funding raised
+      - funding_raised
+      - total funding
+      - capital raised
+      - amount raised
+      - funds raised
+
+  Valuation:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - valuation
+      - company valuation
+      - startup valuation
+      - current valuation
+      - post money valuation
+      - pre money valuation
+
+  Debt:
+    category: Financial
+    type: numeric
+    required: false
+    synonyms:
+      - debt
+      - total debt
+      - outstanding debt
+      - liabilities
+      - debt amount
+
+  # -------------------------
+  # TRACTION
+  # -------------------------
+  Customers:
+    category: Traction
+    type: numeric
+    required: false
+    synonyms:
+      - customers
+      - customer count
+      - number of customers
+      - users
+      - active users
+      - customer base
+
+  Customer_Growth:
+    category: Traction
+    type: percentage
+    required: false
+    synonyms:
+      - customer growth
+      - customer_growth
+      - user growth
+      - customer growth rate
+      - user growth rate
+
+  Monthly_Sales:
+    category: Traction
+    type: numeric
+    required: false
+    synonyms:
+      - monthly sales
+      - monthly_sales
+      - monthly revenue
+      - monthly turnover
+      - monthly sales revenue
+
+  Retention:
+    category: Traction
+    type: percentage
+    required: false
+    synonyms:
+      - retention
+      - retention rate
+      - customer retention
+      - customer retention rate
+
+  SKUs:
+    category: Traction
+    type: numeric
+    required: false
+    synonyms:
+      - skus
+      - sku count
+      - number of skus
+      - products
+      - product count
+
+  # -------------------------
+  # MARKET
+  # -------------------------
+  TAM:
+    category: Market
+    type: numeric
+    required: false
+    synonyms:
+      - tam
+      - total addressable market
+      - total market
+      - addressable market
+
+  SAM:
+    category: Market
+    type: numeric
+    required: false
+    synonyms:
+      - sam
+      - serviceable available market
+      - serviceable addressable market
+
+  SOM:
+    category: Market
+    type: numeric
+    required: false
+    synonyms:
+      - som
+      - serviceable obtainable market
+      - obtainable market
+
+  Market_Growth:
+    category: Market
+    type: percentage
+    required: false
+    synonyms:
+      - market growth
+      - market_growth
+      - market growth rate
+      - industry growth
+      - market growth percentage
+
+  Competition_Intensity:
+    category: Market
+    type: numeric
+    required: false
+    synonyms:
+      - competition intensity
+      - competition_intensity
+      - competitive intensity
+      - competition level
+      - competitive pressure
+
+  # -------------------------
+  # TEAM
+  # -------------------------
+  Team_Size:
+    category: Team
+    type: numeric
+    required: false
+    synonyms:
+      - team size
+      - team_size
+      - number of employees
+      - employees
+      - employee count
+      - staff size
+
+  Founder_Count:
+    category: Team
+    type: numeric
+    required: false
+    synonyms:
+      - founder count
+      - founder_count
+      - number of founders
+      - founders
+      - co founders
+      - cofounders
+
+  Founder_Experience:
+    category: Team
+    type: numeric
+    required: false
+    synonyms:
+      - founder experience
+      - founder_experience
+      - founder experience years
+      - years of founder experience
+      - management experience
+
+  # -------------------------
+  # PRODUCT / TECHNOLOGY
+  # -------------------------
+  IP_Protected:
+    category: Product_Tech
+    type: text
+    required: false
+    synonyms:
+      - ip protected
+      - ip_protected
+      - intellectual property
+      - intellectual property protected
+      - patent protected
+      - patents
+
+  Bootstrapped:
+    category: Product_Tech
+    type: text
+    required: false
+    synonyms:
+      - bootstrapped
+      - bootstrap
+      - self funded
+      - self-funded
+
+  Technology_Readiness:
+    category: Product_Tech
+    type: numeric
+    required: false
+    synonyms:
+      - technology readiness
+      - technology_readiness
+      - technology readiness level
+      - trl
+      - tech readiness
+
+  # -------------------------
+  # INVESTMENT ASK
+  # -------------------------
+  Funding_Required:
+    category: Funding_Valuation
+    type: numeric
+    required: false
+    synonyms:
+      - funding required
+      - funding_required
+      - amount asked
+      - amount asked for
+      - ask amount
+      - investment required
+      - capital required
+      - funding ask
+      - investment ask
+
+  Equity_Offered:
+    category: Funding_Valuation
+    type: percentage
+    required: false
+    synonyms:
+      - equity offered
+      - equity_offered
+      - equity
+      - equity offered percentage
+      - stake offered
+      - percentage offered
+
+  Ask_Valuation:
+    category: Funding_Valuation
+    type: numeric
+    required: false
+    synonyms:
+      - ask valuation
+      - ask_valuation
+      - implied valuation
+      - implied ask valuation
+      - requested valuation
+
+  # -------------------------
+  # DEAL / OUTCOME
+  # -------------------------
+  Deal_Status:
+    category: Outcome
+    type: text
+    required: false
+    synonyms:
+      - deal status
+      - deal_status
+      - deal
+      - investment status
+      - outcome
+      - deal outcome
+
+  Deal_Amount:
+    category: Outcome
+    type: numeric
+    required: false
+    synonyms:
+      - deal amount
+      - deal_amount
+      - amount invested
+      - investment amount
+      - invested amount
+      - final deal amount
+
+  Deal_Equity:
+    category: Outcome
+    type: percentage
+    required: false
+    synonyms:
+      - deal equity
+      - deal_equity
+      - equity in deal
+      - final equity
+
+  Deal_Valuation:
+    category: Outcome
+    type: numeric
+    required: false
+    synonyms:
+      - deal valuation
+      - deal_valuation
+      - final valuation
+      - investment valuation
+
+  Investor_Count:
+    category: Outcome
+    type: numeric
+    required: false
+    synonyms:
+      - investor count
+      - investor_count
+      - number of investors
+      - investors count
+      - number of sharks
+      - sharks in deal
+
+  # -------------------------
+  # METADATA
+  # -------------------------
+  Currency:
+    category: Metadata
+    type: text
+    required: false
+    synonyms:
+      - currency
+      - currency code
+      - currency type
+
+  Unit_Scale:
+    category: Metadata
+    type: text
+    required: false
+    synonyms:
+      - unit scale
+      - unit_scale
+      - units
+      - scale
+      - amount scale
+
+  Batch_ID:
+    category: Metadata
+    type: text
+    required: false
+    synonyms:
+      - batch id
+      - batch_id
+      - dataset batch
+      - batch
+
+# Columns that should NOT be automatically mapped
+# because they can create misleading business interpretations.
+excluded_auto_mapping:
+  - presenter age
+  - presenter gender
+  - male presenters
+  - female presenters
+  - transgender presenters
+  - couple presenters
+  - episode number
+  - pitch number
+  - shark names
+  - investor names
+  - website
+  - social media
+  - image
+  - logo
+
+# Required minimum identity information
+minimum_requirements:
+  - Startup_Name
+  
