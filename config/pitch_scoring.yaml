@@ -1,0 +1,50 @@
+pitch_scoring:
+  criteria:
+    Problem:
+      weight: 8
+
+    Solution:
+      weight: 8
+
+    Market:
+      weight: 12
+
+    Business_Model:
+      weight: 10
+
+    Traction:
+      weight: 12
+
+    Competition:
+      weight: 8
+
+    Product_Technology:
+      weight: 8
+
+    Team:
+      weight: 10
+
+    Financials:
+      weight: 12
+
+    Fundraising:
+      weight: 5
+
+    Scalability:
+      weight: 7
+
+  score_range:
+    minimum: 0
+    maximum: 100
+
+  confidence_levels:
+    - High
+    - Medium
+    - Low
+
+  evidence_status:
+    - Supported
+    - Partially_Supported
+    - Unverified
+    - Missing
+    - Contradictory
