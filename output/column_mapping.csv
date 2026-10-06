@@ -1,0 +1,81 @@
+Source_Column,VentureIQ_Field,Match_Method,Confidence,Status
+Season Number,,NONE,53.85,UNMAPPED
+Startup Name,Startup_Name,EXACT,100.0,AUTO
+Episode Number,,NONE,47.62,UNMAPPED
+Pitch Number,,NONE,47.62,UNMAPPED
+Season Start,,NONE,60.87,UNMAPPED
+Season End,,NONE,54.55,UNMAPPED
+Original Air Date,,NONE,53.85,UNMAPPED
+Episode Title,,NONE,46.67,UNMAPPED
+Anchor,,NONE,54.55,UNMAPPED
+Industry,Industry,EXACT,100.0,AUTO
+Business Description,Industry,FUZZY,74.29,REVIEW
+Company Website,Startup_ID,FUZZY,72.0,REVIEW
+Started in,Startup_ID,FUZZY,70.0,REVIEW
+Number of Presenters,Customers,FUZZY,76.92,REVIEW
+Male Presenters,,NONE,64.29,UNMAPPED
+Female Presenters,,NONE,60.0,UNMAPPED
+Transgender Presenters,,NONE,52.17,UNMAPPED
+Couple Presenters,,NONE,54.05,UNMAPPED
+Pitchers Average Age,,NONE,48.89,UNMAPPED
+Pitchers City,,NONE,50.0,UNMAPPED
+Pitchers State,,NONE,53.33,UNMAPPED
+Yearly Revenue,Revenue,EXACT,100.0,AUTO
+Monthly Sales,Monthly_Sales,EXACT,100.0,AUTO
+Gross Margin,Gross_Margin,EXACT,100.0,AUTO
+Net Margin,Net_Margin,EXACT,100.0,AUTO
+EBITDA,EBITDA,EXACT,100.0,AUTO
+Cash Burn,Burn_Rate,EXACT,100.0,AUTO
+SKUs,SKUs,EXACT,100.0,AUTO
+Has Patents,IP_Protected,FUZZY,77.78,REVIEW
+Bootstrapped,Bootstrapped,EXACT,100.0,AUTO
+Part of Match off,,NONE,48.48,UNMAPPED
+Original Ask Amount,Deal_Amount,FUZZY,72.22,REVIEW
+Original Offered Equity,,NONE,62.86,UNMAPPED
+Valuation Requested,,NONE,64.29,UNMAPPED
+Received Offer,,NONE,62.5,UNMAPPED
+Accepted Offer,,NONE,62.5,UNMAPPED
+Total Deal Amount,Deal_Amount,FUZZY,82.35,REVIEW
+Total Deal Equity,Deal_Equity,FUZZY,78.57,REVIEW
+Total Deal Debt,Debt,FUZZY,80.0,REVIEW
+Debt Interest,,NONE,58.33,UNMAPPED
+Deal Valuation,Deal_Valuation,EXACT,100.0,AUTO
+Number of Sharks in Deal,Investor_Count,FUZZY,80.0,REVIEW
+Deal Has Conditions,,NONE,60.61,UNMAPPED
+Royalty Percentage,,NONE,68.29,UNMAPPED
+Royalty Recouped Amount,,NONE,55.0,UNMAPPED
+Advisory Shares Equity,,NONE,54.55,UNMAPPED
+Namita Investment Amount,Deal_Amount,FUZZY,82.93,REVIEW
+Namita Investment Equity,,NONE,69.77,UNMAPPED
+Namita Debt Amount,Debt,FUZZY,75.86,REVIEW
+Vineeta Investment Amount,Deal_Amount,FUZZY,80.95,REVIEW
+Vineeta Investment Equity,,NONE,68.18,UNMAPPED
+Vineeta Debt Amount,Debt,FUZZY,73.33,REVIEW
+Anupam Investment Amount,Deal_Amount,FUZZY,82.93,REVIEW
+Anupam Investment Equity,,NONE,69.77,UNMAPPED
+Anupam Debt Amount,Debt,FUZZY,75.86,REVIEW
+Aman Investment Amount,Deal_Amount,FUZZY,87.18,REVIEW
+Aman Investment Equity,Funding_Required,FUZZY,73.17,REVIEW
+Aman Debt Amount,Debt,FUZZY,81.48,REVIEW
+Peyush Investment Amount,Deal_Amount,FUZZY,82.93,REVIEW
+Peyush Investment Equity,,NONE,69.77,UNMAPPED
+Peyush Debt Amount,Debt,FUZZY,75.86,REVIEW
+Ritesh Investment Amount,Deal_Amount,FUZZY,82.93,REVIEW
+Ritesh Investment Equity,,NONE,69.77,UNMAPPED
+Ritesh Debt Amount,Debt,FUZZY,75.86,REVIEW
+Amit Investment Amount,Deal_Amount,FUZZY,87.18,REVIEW
+Amit Investment Equity,Funding_Required,FUZZY,73.17,REVIEW
+Amit Debt Amount,Debt,FUZZY,81.48,REVIEW
+Guest Investment Amount,Deal_Amount,FUZZY,85.0,REVIEW
+Guest Investment Equity,Funding_Required,FUZZY,71.43,REVIEW
+Guest Debt Amount,Debt,FUZZY,78.57,REVIEW
+Invested Guest Name,,NONE,68.57,UNMAPPED
+All Guest Names,,NONE,57.14,UNMAPPED
+Namita Present,,NONE,57.14,UNMAPPED
+Vineeta Present,,NONE,61.11,UNMAPPED
+Anupam Present,,NONE,64.29,UNMAPPED
+Aman Present,,NONE,56.0,UNMAPPED
+Peyush Present,,NONE,51.85,UNMAPPED
+Ritesh Present,,NONE,52.94,UNMAPPED
+Amit Present,,NONE,56.25,UNMAPPED
+Guest Present,,NONE,58.06,UNMAPPED

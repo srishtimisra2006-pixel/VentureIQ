@@ -1,0 +1,213 @@
+# VentureIQ Investment Scoring Configuration
+
+scoring:
+
+  # Minimum information required before
+  # an overall attractiveness score is produced.
+  minimum_gate:
+    minimum_scorable_metrics: 3
+    minimum_categories: 2
+
+  # Overall score is only published when
+  # enough category weight is covered.
+  minimum_overall_weight_coverage: 40
+
+  # High-priority threshold
+  high_priority:
+    minimum_attractiveness: 70
+    maximum_risk: 35
+    minimum_completeness: 60
+
+  # Limited-coverage range
+  limited_coverage:
+    minimum_completeness: 40
+    maximum_completeness: 70
+
+  # -----------------------------------------
+  # CATEGORY WEIGHTS
+  # -----------------------------------------
+
+  categories:
+
+    Financial_Health:
+      weight: 14
+      metrics:
+        - EBITDA_Margin_Calculated
+        - Revenue
+        - Gross_Margin
+        - Net_Margin
+
+    Growth:
+      weight: 14
+      metrics:
+        - Revenue_Growth
+        - Customer_Growth
+        - Market_Growth
+
+    Market:
+      weight: 12
+      metrics:
+        - TAM
+        - SAM
+        - SOM
+        - Market_Growth
+
+    Traction:
+      weight: 12
+      metrics:
+        - Customers
+        - Customer_Growth
+        - Monthly_Sales
+        - Retention
+
+    Business_Model:
+      weight: 10
+      metrics:
+        - Business_Model
+        - Revenue
+        - Gross_Margin
+
+    Team:
+      weight: 10
+      metrics:
+        - Founder_Count
+        - Founder_Experience
+        - Team_Size
+
+    Risk:
+      weight: 10
+      metrics:
+        - Debt
+        - Burn_Rate
+        - Cash_Runway
+
+    Product_Tech:
+      weight: 8
+      metrics:
+        - Technology_Readiness
+        - IP_Protected
+
+    Funding_Valuation:
+      weight: 5
+      metrics:
+        - Funding_Required
+        - Equity_Offered
+        - Valuation
+        - Ask_Valuation
+
+    Competition:
+      weight: 5
+      metrics:
+        - Competition_Intensity
+
+  # -----------------------------------------
+  # SCORING ANCHORS
+  # -----------------------------------------
+  #
+  # Each metric is converted to a 0–100 score:
+  #
+  # poor   = weak performance
+  # ok     = acceptable performance
+  # strong = strong performance
+  #
+  # The scoring engine will interpolate between
+  # these values rather than using hard categories.
+
+  anchors:
+
+    EBITDA_Margin_Calculated:
+      poor: -20
+      ok: 10
+      strong: 30
+
+    Revenue_Growth:
+      poor: 0
+      ok: 20
+      strong: 50
+
+    Customer_Growth:
+      poor: 0
+      ok: 20
+      strong: 50
+
+    Gross_Margin:
+      poor: 20
+      ok: 50
+      strong: 80
+
+    Net_Margin:
+      poor: -20
+      ok: 5
+      strong: 20
+
+    Revenue:
+      poor: 0
+      ok: 1000000
+      strong: 10000000
+
+    Customers:
+      poor: 0
+      ok: 1000
+      strong: 10000
+
+    Monthly_Sales:
+      poor: 0
+      ok: 100000
+      strong: 1000000
+
+    Retention:
+      poor: 20
+      ok: 60
+      strong: 90
+
+    Founder_Count:
+      poor: 1
+      ok: 2
+      strong: 3
+
+    Team_Size:
+      poor: 1
+      ok: 10
+      strong: 50
+
+    Founder_Experience:
+      poor: 0
+      ok: 5
+      strong: 15
+
+    Technology_Readiness:
+      poor: 1
+      ok: 5
+      strong: 9
+
+    Funding_Required:
+      poor: 10000000
+      ok: 1000000
+      strong: 100000
+
+    Equity_Offered:
+      poor: 2
+      ok: 10
+      strong: 25
+
+    Competition_Intensity:
+      poor: 100
+      ok: 50
+      strong: 10
+
+
+# -----------------------------------------
+# RISK SCORING
+# -----------------------------------------
+
+risk:
+
+  weights:
+    High_Flag: 25
+    Medium_Flag: 12
+    Low_Flag: 5
+
+  completeness_penalty:
+    multiplier: 0.2
+
+  maximum_score: 100

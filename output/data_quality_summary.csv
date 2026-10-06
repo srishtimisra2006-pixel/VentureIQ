@@ -1,0 +1,81 @@
+Column,Data_Type,Total_Rows,Missing_Values,Missing_Percentage,Unique_Values
+Season Number,int64,789,0,0.0,5
+Startup_Name,str,789,0,0.0,789
+Episode Number,int64,789,0,0.0,53
+Pitch Number,int64,789,0,0.0,789
+Season Start,str,789,0,0.0,5
+Season End,str,789,0,0.0,5
+Original Air Date,str,789,31,3.93,241
+Episode Title,str,789,0,0.0,241
+Anchor,str,789,0,0.0,7
+Industry,str,789,0,0.0,18
+Business Description,str,789,0,0.0,782
+Company Website,str,789,14,1.77,775
+Started in,float64,789,108,13.69,21
+Number of Presenters,int64,789,0,0.0,6
+Male Presenters,float64,789,66,8.37,7
+Female Presenters,float64,789,252,31.94,5
+Transgender Presenters,float64,789,786,99.62,1
+Couple Presenters,float64,789,3,0.38,2
+Pitchers Average Age,str,789,0,0.0,3
+Pitchers City,str,789,12,1.52,171
+Pitchers State,str,789,8,1.01,68
+Revenue,object,789,384,48.67,216
+Monthly_Sales,object,789,473,59.95,135
+Gross_Margin,float64,789,589,74.65,61
+Net_Margin,float64,789,690,87.45,37
+EBITDA,object,789,661,83.78,50
+Burn_Rate,object,789,789,100.0,0
+SKUs,float64,789,736,93.28,37
+Has Patents,str,789,716,90.75,1
+Bootstrapped,str,789,603,76.43,2
+Part of Match off,str,789,773,97.97,1
+Original Ask Amount,float64,789,0,0.0,62
+Original Offered Equity,float64,789,0,0.0,43
+Valuation Requested,float64,789,0,0.0,131
+Received Offer,int64,789,0,0.0,2
+Accepted Offer,float64,789,287,36.38,2
+Total Deal Amount,float64,789,355,44.99,51
+Total Deal Equity,float64,789,355,44.99,67
+Total Deal Debt,float64,789,705,89.35,21
+Debt Interest,float64,789,722,91.51,10
+Deal_Valuation,object,789,356,45.12,140
+Number of Sharks in Deal,float64,789,355,44.99,5
+Deal Has Conditions,str,789,745,94.42,1
+Royalty Percentage,float64,789,742,94.04,7
+Royalty Recouped Amount,float64,789,742,94.04,20
+Advisory Shares Equity,float64,789,773,97.97,10
+Namita Investment Amount,float64,789,653,82.76,41
+Namita Investment Equity,float64,789,653,82.76,43
+Namita Debt Amount,float64,789,768,97.34,13
+Vineeta Investment Amount,float64,789,691,87.58,32
+Vineeta Investment Equity,float64,789,691,87.58,42
+Vineeta Debt Amount,float64,789,774,98.1,8
+Anupam Investment Amount,float64,789,669,84.79,42
+Anupam Investment Equity,float64,789,669,84.79,50
+Anupam Debt Amount,float64,789,780,98.86,7
+Aman Investment Amount,float64,789,625,79.21,45
+Aman Investment Equity,float64,789,625,79.21,54
+Aman Debt Amount,float64,789,768,97.34,16
+Peyush Investment Amount,float64,789,685,86.82,34
+Peyush Investment Equity,float64,789,685,86.82,43
+Peyush Debt Amount,float64,789,776,98.35,7
+Ritesh Investment Amount,float64,789,730,92.52,23
+Ritesh Investment Equity,float64,789,730,92.52,28
+Ritesh Debt Amount,float64,789,773,97.97,10
+Amit Investment Amount,float64,789,751,95.18,20
+Amit Investment Equity,float64,789,751,95.18,18
+Amit Debt Amount,float64,789,781,98.99,6
+Guest Investment Amount,float64,789,696,88.21,32
+Guest Investment Equity,float64,789,696,88.21,36
+Guest Debt Amount,float64,789,779,98.73,9
+Invested Guest Name,str,789,696,88.21,26
+All Guest Names,str,789,337,42.71,24
+Namita Present,float64,789,161,20.41,1
+Vineeta Present,float64,789,293,37.14,1
+Anupam Present,float64,789,122,15.46,1
+Aman Present,float64,789,111,14.07,1
+Peyush Present,float64,789,401,50.82,1
+Ritesh Present,float64,789,619,78.45,1
+Amit Present,float64,789,638,80.86,1
+Guest Present,float64,789,337,42.71,3
